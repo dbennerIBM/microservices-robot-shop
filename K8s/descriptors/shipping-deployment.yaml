@@ -8,7 +8,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: shippling
+      app: shipping
   template:
     metadata:
       creationTimestamp: null
