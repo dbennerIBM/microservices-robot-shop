@@ -1,27 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    kompose.cmd: kompose -f ../docker-compose.yaml convert
-    kompose.version: 1.10.0 (8bb0907)
-  creationTimestamp: null
   labels:
-    io.kompose.service: catalogue
+    app: catalogue
   name: catalogue
 spec:
   replicas: 1
-  strategy: {}
+  selector:
+    matchLabels:
+      app: cart
   template:
     metadata:
       creationTimestamp: null
       labels:
-        io.kompose.service: catalogue
+        app: catalogue
     spec:
       containers:
       - image: robotshop/rs-catalogue:0.2.2
         name: catalogue
         ports:
         - containerPort: 8080
-        resources: {}
-      restartPolicy: Always
-status: {}
