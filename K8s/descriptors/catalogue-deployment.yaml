@@ -8,7 +8,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cart
+      app: catalogue
   template:
     metadata:
       creationTimestamp: null
