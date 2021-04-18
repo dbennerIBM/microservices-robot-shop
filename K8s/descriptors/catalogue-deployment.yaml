@@ -11,6 +11,8 @@ spec:
       app: catalogue
   template:
     metadata:
+      labels:
+        app: catalogue
     spec:
       containers:
       - image: robotshop/rs-catalogue:0.2.2
