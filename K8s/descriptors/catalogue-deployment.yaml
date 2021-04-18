@@ -11,11 +11,10 @@ spec:
       app: catalogue
   template:
     metadata:
-      labels:
-        app: catalogue
     spec:
       containers:
       - image: robotshop/rs-catalogue:0.2.2
         name: catalogue
         ports:
+        - name: catalogue-port
         - containerPort: 8080

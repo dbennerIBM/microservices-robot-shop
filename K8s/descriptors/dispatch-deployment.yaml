@@ -17,3 +17,6 @@ spec:
       containers:
       - image: robotshop/rs-dispatch:0.2.2
         name: dispatch
+        ports:
+        - name: dispatch-port
+          containerPort: 5555

@@ -6,6 +6,6 @@ spec:
   selector:
     app: dispatch
   ports:
-  - name: headless
+  - protocol: TCP
     port: 55555
-    targetPort: 0
+    targetPort: dispatch-port
