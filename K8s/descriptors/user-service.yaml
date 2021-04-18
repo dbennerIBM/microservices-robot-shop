@@ -7,7 +7,7 @@ spec:
   selector:
     app: user
   ports:
-  - port: 8080
-    nodePort: 8080
+  - port: 31010
+    nodePort: 31010
     targetPort: user-port
     protocol: TCP
