@@ -11,7 +11,6 @@ spec:
       app: mysql
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: mysql
     spec:
@@ -19,4 +18,5 @@ spec:
       - image: robotshop/rs-shipping-db:0.2.2
         name: mysql
         ports:
-        - containerPort: 3306
+        - name: mysql-port
+          containerPort: 3306
