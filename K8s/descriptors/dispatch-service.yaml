@@ -5,7 +5,8 @@ metadata:
 spec:
   selector:
     app: dispatch
+  clusterIP: None
   ports:
-  - protocol: TCP
+  - name: headless
     port: 55555
-    targetPort: dispatch-port
+    targetPort: 0
