@@ -7,7 +7,7 @@ spec:
   selector:
     app: payment
   ports:
-  - port: 31004
-    nodePort: 31004
+  - port: 31006
+    nodePort: 31006
     targetPort: payment-port
     protocol: TCP
