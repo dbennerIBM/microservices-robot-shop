@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: dispatch
 spec:
-  clusterIP: None
   selector:
     app: dispatch
   ports:
