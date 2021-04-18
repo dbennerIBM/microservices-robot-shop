@@ -15,7 +15,7 @@ spec:
         app: web
     spec:
       containers:
-      - image: robotshop/rs-web:0.2.2
+      - image: robotshop/rs-web
         name: web
         ports:
         - name: web-port
