@@ -3,7 +3,7 @@
 # set -x
 
 # echo "arg 1 $1"
-
+INSTANA_EUM_KEY=hRF7J_9rSFmg2nZhTdBxbA
 BASE_DIR=/usr/share/nginx/html
 
 if [ -n "$1" ]
