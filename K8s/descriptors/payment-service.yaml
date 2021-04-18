@@ -7,6 +7,7 @@ spec:
   selector:
     app: payment
   ports:
-  - name: "8080"
-    port: 8080
-    targetPort: 8080
+  - port: 31004
+    nodePort: 31004
+    targetPort: payment-port
+    protocol: TCP
